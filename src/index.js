@@ -17,10 +17,15 @@ const Form = () => {
             } else if (emailInp.value == '') {
                 document.getElementById('emailError').textContent = '';
                 emailInp.className = '';
-                document.getElementById('email-icon').remove();
+                if (document.getElementById('email-icon')) {
+                    document.getElementById('email-icon').remove();
+                }
             }else if (!emailInp.validity.valid) {
                 document.getElementById('emailError').textContent = 'Please enter valid email';
                 emailInp.className = 'error';
+                if (document.getElementById('email-icon')) {
+                    document.getElementById('email-icon').remove();
+                }
             }
         })
     }
@@ -39,10 +44,15 @@ const Form = () => {
             } else if (country.value == '') {
                 document.getElementById('countryError').textContent = '';
                 country.className = '';
-                document.getElementById('country-icon').remove();
+                if (document.getElementById('country-icon')) {
+                    document.getElementById('country-icon').remove();
+                }
             } else if (!country.validity.valid) {
                 document.getElementById('countryError').textContent = 'Enter valid country';
                 country.className = 'error';
+                if (document.getElementById('country-icon')) {
+                    document.getElementById('country-icon').remove();
+                }
             }
         })
     }
@@ -61,10 +71,15 @@ const Form = () => {
             } else if (zip.value == '') {
                 document.getElementById('zipError').textContent = '';
                 zip.className = '';
-                document.getElementById('zip-icon').remove();
+                if (document.getElementById('zip-icon')) {
+                    document.getElementById('zip-icon').remove();
+                }
             } else if (!zip.validity.valid) {
                 document.getElementById('zipError').textContent = 'Enter valid zipcode';
                 zip.className = 'error';
+                if (document.getElementById('zip-icon')) {
+                    document.getElementById('zip-icon').remove();
+                }
             }
         })
     }
@@ -84,10 +99,15 @@ const Form = () => {
             } else if (pwd.value == '') {
                 document.getElementById('pwdError').textContent = '';
                 pwd.className = '';
-                document.getElementById('pwd-icon').remove();
+                if (document.getElementById('pwd-icon')) {
+                    document.getElementById('pwd-icon').remove();
+                }
             } else {
                 document.getElementById('pwdError').textContent = 'Passwords need to be 8 characters';
                 pwd.className = 'error';
+                if (document.getElementById('pwd-icon')) {
+                    document.getElementById('pwd-icon').remove();
+                }
             }
         })
     }
@@ -107,7 +127,9 @@ const Form = () => {
             } else if (confirm.value == '') {
                 document.getElementById('confirmError').textContent = '';
                 confirm.className = '';
-                document.getElementById('confirm-icon').remove();
+                if (document.getElementById('confirm-icon')) {
+                    document.getElementById('confirm-icon').remove();
+                }
             } else if (pwdKey != confirm.value) {
                 document.getElementById('confirmError').textContent = 'Passwords do not match';
                 confirm.className = 'error';
