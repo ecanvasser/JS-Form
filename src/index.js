@@ -69,10 +69,33 @@ const Form = () => {
         })
     }
 
+    const pwdValidate = () => {
+        const pwd = document.getElementById('pwd');
+        var check = new Image();
+        check.src = Icon;
+
+        pwd.addEventListener('input', function() {
+            if (pwd.validity.valid) {
+                document.getElementById('pwdError').textContent = '';
+                pwd.className = 'success';
+                let pwdIcon = document.getElementById('pwd-row').insertAdjacentElement('beforeend', check);
+                pwdIcon.setAttribute('id', 'pwd-icon');
+            } else if (pwd.value == '') {
+                document.getElementById('pwdError').textContent = '';
+                pwd.className = '';
+                document.getElementById('pwd-icon').remove();
+            } else {
+                document.getElementById('pwdError').textContent = 'Passwords need to be 8 characters';
+                pwd.className = 'error';
+            }
+        })
+    }
+
     const addEvents = () => {
         emailValidate();
         countryValidate();
         zipValidate();
+        pwdValidate();
     }
 
     return {

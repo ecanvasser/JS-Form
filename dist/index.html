@@ -32,14 +32,16 @@
                 <span id="zipError"></span>
             </label>
             <label for="pwd">
-                Password
-                <input type="password" id="pwd" required>
+                <div class="top-row" id="pwd-row">
+                    Password
+                    <input type="password" id="pwd" required minlength="8">
+                </div>
                 <span id="pwdError"></span>
             </label>
             <label for="pwd-confirm">
                 Confirm Password
                 <input type="password" id="pwd-confirm">
-                <span id="pwd-confirm"></span>
+                <span id="confirmError"></span>
             </label>
         </form>
     </div>
