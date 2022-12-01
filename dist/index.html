@@ -9,7 +9,7 @@
 <body>
     <div id="form-container">
         <div id="title">Login</div>
-        <form action="" novalidate>
+        <form action="" id="form" novalidate>
             <label for="email">
                 <div class="top-row" id="email-row">
                     Email
@@ -41,10 +41,12 @@
             <label for="pwd-confirm">
                 <div class="top-row" id="confirm-row">
                     Confirm Password
-                    <input type="password" id="pwd-confirm">
+                    <input type="password" id="pwd-confirm" required>
                 </div>
                 <span id="confirmError"></span>
             </label>
+            <button form="form" type="submit">Login</button>
+            <span id="loginError"></span>
         </form>
     </div>
     <script src="main.js"></script>

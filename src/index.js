@@ -140,11 +140,31 @@ const Form = () => {
         })
     }
 
+    const submitForm = () => {
+        const form = document.getElementById('form');
+
+        form.addEventListener('submit', function(e) {
+            var inputList = Array.from(document.querySelectorAll('input'));
+            var status = [];
+
+            inputList.forEach(x => status.push(x.className));
+            if (status.includes('error')) {
+                document.getElementById('loginError').textContent = 'Please fix all incorrect fields to login';
+                e.preventDefault()
+            } else {
+                document.getElementById('loginError').textContent = '';
+                alert(`You're in!`)
+            }
+            
+        })
+    }
+
     const addEvents = () => {
         emailValidate();
         countryValidate();
         zipValidate();
         pwdValidate();
+        submitForm();
     }
 
     return {
