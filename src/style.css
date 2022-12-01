@@ -14,6 +14,10 @@ form {
     gap: 15px;
 }
 
+input {
+    border: none;
+}
+
 label {
     color: white;
 }
@@ -25,9 +29,18 @@ label {
     color: white;
 }
 
+span {
+    color: red;
+    font-size: 12px;
+}
+
 #form-container {
     background-color: #0c4a6e;
     padding: 3rem;
     border: 2px white solid;
     border-radius: 10px;
+}
+
+.error {
+    border: red 2px solid;
 }

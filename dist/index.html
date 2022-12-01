@@ -9,10 +9,12 @@
 <body>
     <div id="form-container">
         <div id="title">Login</div>
-        <form action="">
+        <form action="" novalidate>
             <label for="email">
-                Email
-                <input type="email" id="email" required>
+                <div class="top-row">
+                    Email
+                    <input type="email" id="email" required>
+                </div>
                 <span id="emailError"></span>
             </label>
             <label for="country">
