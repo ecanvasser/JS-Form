@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('./Roboto-Bold.ttf');
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -16,17 +26,21 @@ form {
 
 input {
     border: none;
+    border-radius: 5px;
 }
 
 label {
     color: white;
+    font-family: 'Roboto';
 }
 
 #title {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
     color: white;
+    font-size: 24px;
+    font-family: 'Roboto-bold';
 }
 
 span {
@@ -41,7 +55,7 @@ img {
 
 #form-container {
     background-color: #0c4a6e;
-    padding: 3rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
     border: 2px white solid;
     border-radius: 10px;
 }
@@ -58,4 +72,12 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+button {
+    margin-top: 10px;
+    font-family: 'Roboto';
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
 }
