@@ -80,6 +80,7 @@ const Form = () => {
                 pwd.className = 'success';
                 let pwdIcon = document.getElementById('pwd-row').insertAdjacentElement('beforeend', check);
                 pwdIcon.setAttribute('id', 'pwd-icon');
+                confirmPwd();
             } else if (pwd.value == '') {
                 document.getElementById('pwdError').textContent = '';
                 pwd.className = '';
@@ -87,6 +88,32 @@ const Form = () => {
             } else {
                 document.getElementById('pwdError').textContent = 'Passwords need to be 8 characters';
                 pwd.className = 'error';
+            }
+        })
+    }
+
+    const confirmPwd = () => {
+        const pwdKey = document.getElementById('pwd').value;
+        const confirm = document.getElementById('pwd-confirm');
+        var check = new Image();
+        check.src = Icon;
+
+        confirm.addEventListener('input', function() {
+            if (pwdKey == confirm.value) {
+                document.getElementById('confirmError').textContent = '';
+                confirm.className = 'success';
+                let confirmIcon = document.getElementById('confirm-row').insertAdjacentElement('beforeend', check);
+                confirmIcon.setAttribute('id', 'confirm-icon');
+            } else if (confirm.value == '') {
+                document.getElementById('confirmError').textContent = '';
+                confirm.className = '';
+                document.getElementById('confirm-icon').remove();
+            } else if (pwdKey != confirm.value) {
+                document.getElementById('confirmError').textContent = 'Passwords do not match';
+                confirm.className = 'error';
+                if (document.getElementById('confirm-icon')) {
+                    document.getElementById('confirm-icon').remove();
+                }
             }
         })
     }
