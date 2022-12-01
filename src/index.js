@@ -19,11 +19,30 @@ const Form = () => {
         })
     }
 
+    const countryValidate = () => {
+        const country = document.getElementById('country');
+
+        country.addEventListener('input', function() {
+            if (country.validity.valid) {
+                document.getElementById('countryError').textContent = '';
+                country.className = '';
+            } else if (!country.validity.valid) {
+                document.getElementById('countryError').textContent = 'Enter valid country';
+                country.className = 'error';
+            }
+        })
+    }
+
+    const addEvents = () => {
+        emailValidate();
+        countryValidate();
+    }
+
     return {
-        emailValidate
+        addEvents
     }
 
 }
 
 var form = Form()
-form.emailValidate();
+form.addEvents();
