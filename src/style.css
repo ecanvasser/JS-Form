@@ -1,3 +1,33 @@
-h1 {
-    color: red;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #262626;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    color: white;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+
+#form-container {
+    background-color: #0c4a6e;
+    padding: 3rem;
+    border: 2px white solid;
+    border-radius: 10px;
 }
