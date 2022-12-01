@@ -34,6 +34,11 @@ span {
     font-size: 12px;
 }
 
+img {
+    height: 20px;
+    width: 20px;
+}
+
 #form-container {
     background-color: #0c4a6e;
     padding: 3rem;
@@ -43,4 +48,14 @@ span {
 
 .error {
     border: red 2px solid;
+}
+
+.success {
+    border: #22c55e 2px solid;
+}
+
+.top-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

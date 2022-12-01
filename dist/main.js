@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    display: flex;\\n    justify-content: center;\\n    align-items: center;\\n    height: 100vh;\\n    background-color: #262626;\\n    margin: 0;\\n}\\n\\nform {\\n    display: flex;\\n    flex-direction: column;\\n    align-items: center;\\n    gap: 15px;\\n}\\n\\ninput {\\n    border: none;\\n}\\n\\nlabel {\\n    color: white;\\n}\\n\\n#title {\\n    display: flex;\\n    justify-content: center;\\n    margin-bottom: 0.8rem;\\n    color: white;\\n}\\n\\nspan {\\n    color: red;\\n    font-size: 12px;\\n}\\n\\n#form-container {\\n    background-color: #0c4a6e;\\n    padding: 3rem;\\n    border: 2px white solid;\\n    border-radius: 10px;\\n}\\n\\n.error {\\n    border: red 2px solid;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://js-form/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    display: flex;\\n    justify-content: center;\\n    align-items: center;\\n    height: 100vh;\\n    background-color: #262626;\\n    margin: 0;\\n}\\n\\nform {\\n    display: flex;\\n    flex-direction: column;\\n    align-items: center;\\n    gap: 15px;\\n}\\n\\ninput {\\n    border: none;\\n}\\n\\nlabel {\\n    color: white;\\n}\\n\\n#title {\\n    display: flex;\\n    justify-content: center;\\n    margin-bottom: 0.8rem;\\n    color: white;\\n}\\n\\nspan {\\n    color: red;\\n    font-size: 12px;\\n}\\n\\nimg {\\n    height: 20px;\\n    width: 20px;\\n}\\n\\n#form-container {\\n    background-color: #0c4a6e;\\n    padding: 3rem;\\n    border: 2px white solid;\\n    border-radius: 10px;\\n}\\n\\n.error {\\n    border: red 2px solid;\\n}\\n\\n.success {\\n    border: #22c55e 2px solid;\\n}\\n\\n.top-row {\\n    display: flex;\\n    align-items: center;\\n    gap: 10px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://js-form/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst Form = () => {\n\n    const emailValidate = () => {\n        const emailInp = document.getElementById('email');\n        \n        document.getElementById('email').addEventListener('input', function() {\n            if (emailInp.validity.valid) {\n                document.getElementById('emailError').textContent = '';\n                emailInp.className = '';\n            } else if (emailInp.value == '') {\n                document.getElementById('emailError').textContent = '';\n                emailInp.className = '';\n            }else if (!emailInp.validity.valid) {\n                document.getElementById('emailError').textContent = 'Please enter valid email';\n                emailInp.className = 'error';\n            }\n        })\n    }\n\n    const countryValidate = () => {\n        const country = document.getElementById('country');\n\n        country.addEventListener('input', function() {\n            if (country.validity.valid) {\n                document.getElementById('countryError').textContent = '';\n                country.className = '';\n            } else if (country.value == '') {\n                document.getElementById('countryError').textContent = '';\n                country.className = '';\n            } else if (!country.validity.valid) {\n                document.getElementById('countryError').textContent = 'Enter valid country';\n                country.className = 'error';\n            }\n        })\n    }\n\n    const zipValidate = () => {\n        const zip = document.getElementById('zip');\n\n        zip.addEventListener('input', function() {\n            if (zip.validity.valid) {\n                document.getElementById('zipError').textContent = '';\n                zip.className = '';\n            } else if (zip.value == '') {\n                document.getElementById('zipError').textContent = '';\n                zip.className = '';\n            } else if (!zip.validity.valid) {\n                document.getElementById('zipError').textContent = 'Enter valid zipcode';\n                zip.className = 'error';\n            }\n        })\n    }\n\n    const addEvents = () => {\n        emailValidate();\n        countryValidate();\n        zipValidate();\n    }\n\n    return {\n        addEvents\n    }\n\n}\n\nvar form = Form()\nform.addEvents();\n\n//# sourceURL=webpack://js-form/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _checkmark_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./checkmark.png */ \"./src/checkmark.png\");\n\n\n\nconst Form = () => {\n\n    const emailValidate = () => {\n        const emailInp = document.getElementById('email');\n        var check = new Image();\n        check.src = _checkmark_png__WEBPACK_IMPORTED_MODULE_1__;\n        \n        document.getElementById('email').addEventListener('input', function() {\n            if (emailInp.validity.valid) {\n                document.getElementById('emailError').textContent = '';\n                emailInp.className = 'success';\n                let emailIcon = document.getElementById('email-row').insertAdjacentElement('beforeend', check);\n                emailIcon.setAttribute('id', 'email-icon');\n            } else if (emailInp.value == '') {\n                document.getElementById('emailError').textContent = '';\n                emailInp.className = '';\n                document.getElementById('email-icon').remove();\n            }else if (!emailInp.validity.valid) {\n                document.getElementById('emailError').textContent = 'Please enter valid email';\n                emailInp.className = 'error';\n            }\n        })\n    }\n\n    const countryValidate = () => {\n        const country = document.getElementById('country');\n        var check = new Image();\n        check.src = _checkmark_png__WEBPACK_IMPORTED_MODULE_1__;\n\n        country.addEventListener('input', function() {\n            if (country.validity.valid) {\n                document.getElementById('countryError').textContent = '';\n                country.className = 'success';\n                let countryIcon = document.getElementById('country-row').insertAdjacentElement('beforeend', check);\n                countryIcon.setAttribute('id', 'country-icon')\n            } else if (country.value == '') {\n                document.getElementById('countryError').textContent = '';\n                country.className = '';\n                document.getElementById('country-icon').remove();\n            } else if (!country.validity.valid) {\n                document.getElementById('countryError').textContent = 'Enter valid country';\n                country.className = 'error';\n            }\n        })\n    }\n\n    const zipValidate = () => {\n        const zip = document.getElementById('zip');\n        var check = new Image();\n        check.src = _checkmark_png__WEBPACK_IMPORTED_MODULE_1__;\n\n        zip.addEventListener('input', function() {\n            if (zip.validity.valid) {\n                document.getElementById('zipError').textContent = '';\n                zip.className = 'success';\n                let zipIcon = document.getElementById('zip-row').insertAdjacentElement('beforeend', check);\n                zipIcon.setAttribute('id', 'zip-icon')\n            } else if (zip.value == '') {\n                document.getElementById('zipError').textContent = '';\n                zip.className = '';\n                document.getElementById('zip-icon').remove();\n            } else if (!zip.validity.valid) {\n                document.getElementById('zipError').textContent = 'Enter valid zipcode';\n                zip.className = 'error';\n            }\n        })\n    }\n\n    const addEvents = () => {\n        emailValidate();\n        countryValidate();\n        zipValidate();\n    }\n\n    return {\n        addEvents\n    }\n\n}\n\nvar form = Form()\nform.addEvents();\n\n//# sourceURL=webpack://js-form/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/checkmark.png":
+/*!***************************!*\
+  !*** ./src/checkmark.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"2f565f8c1e408fa27607.png\";\n\n//# sourceURL=webpack://js-form/./src/checkmark.png?");
 
 /***/ })
 
@@ -171,6 +181,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -185,6 +207,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
