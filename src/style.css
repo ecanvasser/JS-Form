@@ -32,6 +32,7 @@ input {
 label {
     color: white;
     font-family: 'Roboto';
+    position: relative;
 }
 
 #title {
@@ -46,6 +47,8 @@ label {
 span {
     color: red;
     font-size: 12px;
+    position: absolute;
+    right: 5px;
 }
 
 img {

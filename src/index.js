@@ -21,7 +21,7 @@ const Form = () => {
                     document.getElementById('email-icon').remove();
                 }
             }else if (!emailInp.validity.valid) {
-                document.getElementById('emailError').textContent = 'Please enter valid email';
+                document.getElementById('emailError').textContent = 'Please enter a valid email';
                 emailInp.className = 'error';
                 if (document.getElementById('email-icon')) {
                     document.getElementById('email-icon').remove();
@@ -48,7 +48,7 @@ const Form = () => {
                     document.getElementById('country-icon').remove();
                 }
             } else if (!country.validity.valid) {
-                document.getElementById('countryError').textContent = 'Enter valid country';
+                document.getElementById('countryError').textContent = 'Please enter a valid country';
                 country.className = 'error';
                 if (document.getElementById('country-icon')) {
                     document.getElementById('country-icon').remove();
@@ -75,7 +75,7 @@ const Form = () => {
                     document.getElementById('zip-icon').remove();
                 }
             } else if (!zip.validity.valid) {
-                document.getElementById('zipError').textContent = 'Enter valid zipcode';
+                document.getElementById('zipError').textContent = 'Please enter a valid zipcode';
                 zip.className = 'error';
                 if (document.getElementById('zip-icon')) {
                     document.getElementById('zip-icon').remove();
